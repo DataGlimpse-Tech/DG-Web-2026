@@ -39,7 +39,7 @@ const PERKS = [
       </svg>
     ),
     title: 'Flexible Work',
-    desc: 'Hybrid and remote options that respect your productivity rhythm.',
+    desc: 'Fully remote — work from anywhere that sparks your best thinking.',
   },
   {
     icon: (
