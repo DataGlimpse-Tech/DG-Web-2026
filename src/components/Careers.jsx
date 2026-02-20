@@ -39,7 +39,7 @@ const PERKS = [
       </svg>
     ),
     title: 'Flexible Work',
-    desc: 'Fully remote — work from anywhere that sparks your best thinking.',
+    desc: 'Fully remote. Work from anywhere that sparks your best thinking.',
   },
   {
     icon: (
