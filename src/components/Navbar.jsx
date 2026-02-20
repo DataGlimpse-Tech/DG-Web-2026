@@ -117,14 +117,15 @@ export default function Navbar() {
           background: rgba(255, 255, 255, 0.85);
           backdrop-filter: blur(20px) saturate(180%);
           -webkit-backdrop-filter: blur(20px) saturate(180%);
-          border-bottom: 1px solid rgba(0, 102, 255, 0.08);
+          border-bottom: 1px solid rgba(0, 102, 255, 0.15);
+          box-shadow: 0 4px 24px rgba(0, 0, 0, 0.14), 0 1px 4px rgba(0, 0, 0, 0.08);
           transition: var(--transition-base);
         }
 
         .navbar--scrolled {
-          background: rgba(255, 255, 255, 0.97);
-          border-bottom-color: rgba(0, 102, 255, 0.12);
-          box-shadow: 0 4px 24px rgba(0, 102, 255, 0.08);
+          background: rgba(255, 255, 255, 0.98);
+          border-bottom-color: rgba(0, 102, 255, 0.18);
+          box-shadow: 0 4px 32px rgba(0, 102, 255, 0.14), 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         .navbar__inner {
