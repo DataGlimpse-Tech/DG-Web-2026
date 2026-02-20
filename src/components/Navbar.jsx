@@ -219,18 +219,23 @@ export default function Navbar() {
           display: none;
           flex-direction: column;
           justify-content: center;
+          align-items: center;
           gap: 5px;
-          width: 36px;
-          height: 36px;
+          width: 44px;
+          height: 44px;
           background: none;
           border: none;
           cursor: pointer;
           padding: 4px;
+          flex-shrink: 0;
+          -webkit-tap-highlight-color: transparent;
+          /* desktop: pushed right via flex sibling order; mobile: space-between handles it */
           margin-left: auto;
         }
 
         .hamburger span {
           display: block;
+          width: 22px;
           height: 2px;
           background: var(--text-primary);
           border-radius: 2px;
@@ -272,7 +277,21 @@ export default function Navbar() {
           .navbar__links { display: none; }
           .navbar__cta   { display: none; }
           .hamburger     { display: flex; }
-          .navbar__inner { padding: 0 20px; }
+          .navbar__inner {
+            padding: 0 20px;
+            gap: 0;
+            justify-content: space-between;
+          }
+          .navbar__logo {
+            flex-shrink: 1;
+            min-width: 0;
+            overflow: hidden;
+          }
+          .navbar__wordmark {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 160px;
+          }
         }
 
         @media (max-width: 768px) {
